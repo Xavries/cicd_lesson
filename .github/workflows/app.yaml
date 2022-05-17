@@ -5,6 +5,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: pylint
+        run: echo "Ruun pylint"
+      - name: pytest
+        run: echo "Ruun pytest"
       - name: test_job
         shell: bash
         run: ls
